@@ -20,6 +20,6 @@ function createTimeInEvent(obj, dateStamp){
   let date = dateArr[0]
   obj.timeInEvents.push({
     type: "TimeIn",
-    hour. 
+    hour.
   })
 }
