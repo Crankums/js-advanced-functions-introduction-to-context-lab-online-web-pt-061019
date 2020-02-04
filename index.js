@@ -54,3 +54,13 @@ function allWagesFor(obj) {
   }, 0)
     return totalWages
 }
+
+function calculatePayroll(arr){
+  return arr.reduce(function(total, date) {
+    return total + allWagesFor(date)
+  }, 0)
+}
+
+function findEmployeeByFirstName(arr, name) {
+  return arr.find(el => el.firstName === name)
+}
