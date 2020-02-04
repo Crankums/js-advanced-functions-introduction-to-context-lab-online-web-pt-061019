@@ -28,7 +28,7 @@ function createTimeInEvent(obj, dateStamp){
 function createTimeOutEvent(obj, dateStamp){
   let [date, hour] = dateStamp.split(' ')
 
-  obj.timeInEvents.push({
+  obj.timeOutEvents.push({
     type: "TimeOut",
     hour: parseInt(hour, 10),
     date
