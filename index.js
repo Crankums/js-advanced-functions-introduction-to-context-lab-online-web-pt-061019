@@ -24,3 +24,14 @@ function createTimeInEvent(obj, dateStamp){
   })
   return obj
 }
+
+function createTimeOutEvent(obj, dateStamp){
+  let [date, hour] = dateStamp.split(' ')
+
+  obj.timeInEvents.push({
+    type: "TimeOut",
+    hour: parseInt(hour, 10),
+    date
+  })
+  return obj
+}
