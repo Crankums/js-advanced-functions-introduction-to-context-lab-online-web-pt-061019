@@ -1,6 +1,6 @@
 // Your code here
 function createEmployeeRecord(arr){
-  return obj = {
+  return {
     firstName: arr[0],
     familyName: arr[1],
     title: arr[2],
