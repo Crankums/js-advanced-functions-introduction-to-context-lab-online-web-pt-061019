@@ -41,3 +41,8 @@ function hoursWorkedOnDate(obj, date){
   let clockOut = obj.timeOutEvents.find(el => el.date === date)
   return (clockOut.hour-clockIn.hour)/100
 }
+
+function wagesEarnedOnDate(obj, date){
+  return hoursWorkedOnDate(obj, date)*obj.payRate
+  
+}
