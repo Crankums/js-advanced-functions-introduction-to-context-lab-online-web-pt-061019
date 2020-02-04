@@ -37,5 +37,5 @@ function createTimeOutEvent(obj, dateStamp){
 }
 
 function hoursWorkedOnDate(obj, date){
-  
+
 }
