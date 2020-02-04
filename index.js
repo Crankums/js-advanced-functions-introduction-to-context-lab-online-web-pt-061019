@@ -45,3 +45,12 @@ function hoursWorkedOnDate(obj, date){
 function wagesEarnedOnDate(obj, date){
   return hoursWorkedOnDate(obj, date)*obj.payPerHour
 }
+
+function allWagesFor(obj) {
+  let dates = employee.timeInEvents.map(el => el.date)
+
+  let totalWages = dates.reduce(function(total, date){
+    return total + wagesEarnedOnDate(obj, date)
+  }, 0)
+    return totalWages
+}
