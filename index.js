@@ -17,10 +17,10 @@ function createEmployeeRecords(arr) {
 function createTimeInEvent(obj, dateStamp){
   let [date, hour] = dateStamp.split(' ')
 
-  return obj.timeInEvents.push({
+  obj.timeInEvents.push({
     type: "TimeIn",
-    hour: hour,
-    date: date
+    hour: parseInt(hour, 10),
+    date
   })
 
 }
