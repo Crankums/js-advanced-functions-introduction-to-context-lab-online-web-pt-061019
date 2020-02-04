@@ -47,7 +47,7 @@ function wagesEarnedOnDate(obj, date){
 }
 
 function allWagesFor(obj) {
-  let dates = employee.timeInEvents.map(el => el.date)
+  let dates = obj.timeInEvents.map(el => el.date)
 
   let totalWages = dates.reduce(function(total, date){
     return total + wagesEarnedOnDate(obj, date)
