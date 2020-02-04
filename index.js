@@ -54,4 +54,3 @@ function allWagesFor(obj) {
   }, 0)
     return totalWages
 }
-
