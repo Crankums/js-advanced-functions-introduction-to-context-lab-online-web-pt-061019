@@ -18,9 +18,10 @@ function createTimeInEvent(obj, dateStamp){
   let dateArr = dateStamp.split(' ')
   let hour = dateArr[1]
   let date = dateArr[0]
-  obj.timeInEvents.push({
+  return obj.timeInEvents.push({
     type: "TimeIn",
     hour: hour,
     date: date
   })
+  
 }
