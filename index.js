@@ -22,5 +22,5 @@ function createTimeInEvent(obj, dateStamp){
     hour: parseInt(hour, 10),
     date
   })
-
+  return obj
 }
