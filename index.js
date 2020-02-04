@@ -23,5 +23,5 @@ function createTimeInEvent(obj, dateStamp){
     hour: hour,
     date: date
   })
-  
+
 }
